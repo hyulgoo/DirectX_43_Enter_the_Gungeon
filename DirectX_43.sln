@@ -1,0 +1,68 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Client", "Project\Client\Client.vcxproj", "{96A12F2B-F2E6-4AAA-8EB7-5F163384DA7B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{64EDC83E-1302-4D42-A474-1DA5B9B402FC} = {64EDC83E-1302-4D42-A474-1DA5B9B402FC}
+		{AD2B8605-F5B8-41E5-AEC4-C5F164F80557} = {AD2B8605-F5B8-41E5-AEC4-C5F164F80557}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Engine", "Project\Engine\Engine.vcxproj", "{AD2B8605-F5B8-41E5-AEC4-C5F164F80557}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Script", "Project\Script\Script.vcxproj", "{64EDC83E-1302-4D42-A474-1DA5B9B402FC}"
+	ProjectSection(ProjectDependencies) = postProject
+		{AD2B8605-F5B8-41E5-AEC4-C5F164F80557} = {AD2B8605-F5B8-41E5-AEC4-C5F164F80557}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CodeGen", "Project\CodeGen\CodeGen.vcxproj", "{FD69567E-8FBB-45F0-AA9E-71872590AFDD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{96A12F2B-F2E6-4AAA-8EB7-5F163384DA7B}.Debug|x64.ActiveCfg = Debug|x64
+		{96A12F2B-F2E6-4AAA-8EB7-5F163384DA7B}.Debug|x64.Build.0 = Debug|x64
+		{96A12F2B-F2E6-4AAA-8EB7-5F163384DA7B}.Debug|x86.ActiveCfg = Debug|Win32
+		{96A12F2B-F2E6-4AAA-8EB7-5F163384DA7B}.Debug|x86.Build.0 = Debug|Win32
+		{96A12F2B-F2E6-4AAA-8EB7-5F163384DA7B}.Release|x64.ActiveCfg = Release|x64
+		{96A12F2B-F2E6-4AAA-8EB7-5F163384DA7B}.Release|x64.Build.0 = Release|x64
+		{96A12F2B-F2E6-4AAA-8EB7-5F163384DA7B}.Release|x86.ActiveCfg = Release|Win32
+		{96A12F2B-F2E6-4AAA-8EB7-5F163384DA7B}.Release|x86.Build.0 = Release|Win32
+		{AD2B8605-F5B8-41E5-AEC4-C5F164F80557}.Debug|x64.ActiveCfg = Debug|x64
+		{AD2B8605-F5B8-41E5-AEC4-C5F164F80557}.Debug|x64.Build.0 = Debug|x64
+		{AD2B8605-F5B8-41E5-AEC4-C5F164F80557}.Debug|x86.ActiveCfg = Debug|Win32
+		{AD2B8605-F5B8-41E5-AEC4-C5F164F80557}.Debug|x86.Build.0 = Debug|Win32
+		{AD2B8605-F5B8-41E5-AEC4-C5F164F80557}.Release|x64.ActiveCfg = Release|x64
+		{AD2B8605-F5B8-41E5-AEC4-C5F164F80557}.Release|x64.Build.0 = Release|x64
+		{AD2B8605-F5B8-41E5-AEC4-C5F164F80557}.Release|x86.ActiveCfg = Release|Win32
+		{AD2B8605-F5B8-41E5-AEC4-C5F164F80557}.Release|x86.Build.0 = Release|Win32
+		{64EDC83E-1302-4D42-A474-1DA5B9B402FC}.Debug|x64.ActiveCfg = Debug|x64
+		{64EDC83E-1302-4D42-A474-1DA5B9B402FC}.Debug|x64.Build.0 = Debug|x64
+		{64EDC83E-1302-4D42-A474-1DA5B9B402FC}.Debug|x86.ActiveCfg = Debug|Win32
+		{64EDC83E-1302-4D42-A474-1DA5B9B402FC}.Debug|x86.Build.0 = Debug|Win32
+		{64EDC83E-1302-4D42-A474-1DA5B9B402FC}.Release|x64.ActiveCfg = Release|x64
+		{64EDC83E-1302-4D42-A474-1DA5B9B402FC}.Release|x64.Build.0 = Release|x64
+		{64EDC83E-1302-4D42-A474-1DA5B9B402FC}.Release|x86.ActiveCfg = Release|Win32
+		{64EDC83E-1302-4D42-A474-1DA5B9B402FC}.Release|x86.Build.0 = Release|Win32
+		{FD69567E-8FBB-45F0-AA9E-71872590AFDD}.Debug|x64.ActiveCfg = Debug|x64
+		{FD69567E-8FBB-45F0-AA9E-71872590AFDD}.Debug|x64.Build.0 = Debug|x64
+		{FD69567E-8FBB-45F0-AA9E-71872590AFDD}.Debug|x86.ActiveCfg = Debug|Win32
+		{FD69567E-8FBB-45F0-AA9E-71872590AFDD}.Debug|x86.Build.0 = Debug|Win32
+		{FD69567E-8FBB-45F0-AA9E-71872590AFDD}.Release|x64.ActiveCfg = Release|x64
+		{FD69567E-8FBB-45F0-AA9E-71872590AFDD}.Release|x64.Build.0 = Release|x64
+		{FD69567E-8FBB-45F0-AA9E-71872590AFDD}.Release|x86.ActiveCfg = Release|Win32
+		{FD69567E-8FBB-45F0-AA9E-71872590AFDD}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {99FB076F-5F14-456E-93AF-D0FC51B85372}
+	EndGlobalSection
+EndGlobal

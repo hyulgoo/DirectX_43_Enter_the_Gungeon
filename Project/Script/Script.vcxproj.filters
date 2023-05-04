@@ -1,0 +1,480 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Script">
+      <UniqueIdentifier>{588725da-a3dd-4585-999c-fc4859b87190}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Default">
+      <UniqueIdentifier>{394f7bf5-971a-4402-becd-9ba72351af1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ScriptMgr">
+      <UniqueIdentifier>{a8e63881-d574-4f9e-9b77-9091201cee33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Script\01. State">
+      <UniqueIdentifier>{9e03c585-3784-485e-a2fb-6dfbcc5eeb9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Script\01. State\MonsterState">
+      <UniqueIdentifier>{ee1398cf-f28a-47b0-ae2b-ba79ed455d3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Script\01. State\PlayerState">
+      <UniqueIdentifier>{9ea7fef1-8392-4fcd-90e3-fb78c62bf508}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Script\01. State\PlayerState\PetState">
+      <UniqueIdentifier>{4e8f29c0-9e01-47a8-a603-7cfbb79b2db0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Script\02. Player">
+      <UniqueIdentifier>{9a604ec1-a4c0-4cd6-9e6e-29e8acab6eec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Script\04. Monster">
+      <UniqueIdentifier>{3ebcadbc-e61f-4433-a341-f765dd9d59f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Script\01. State\WeaponState">
+      <UniqueIdentifier>{12874908-aa6e-4b23-8c02-2ed662748f2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Script\03. Weapon">
+      <UniqueIdentifier>{3e4e29bc-ae44-4240-be25-9c1c8b39830f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Script\02. Player\Effect">
+      <UniqueIdentifier>{45fa6e26-f97b-49e9-a0e9-ff7840a93627}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Script\01. State\MonsterState\MonsterAttack">
+      <UniqueIdentifier>{33a9b045-9d89-46a3-b643-41d8ecee1a09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Script\04. Monster\MstGun">
+      <UniqueIdentifier>{5cee3459-591e-4f9c-a7db-9ec989350afb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Script\01. State\MonsterState\MstGun">
+      <UniqueIdentifier>{462891ef-e930-4a50-ad75-7bef546776b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Script\01. State\BossState">
+      <UniqueIdentifier>{94df6aaf-b596-4edb-a6e6-19ce0ad71d65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Script\05. Boss">
+      <UniqueIdentifier>{c884f3d1-8a04-4086-8ead-d5628c1265f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Script\06. Door">
+      <UniqueIdentifier>{5d9d86c2-78e3-4c65-8085-0d211fdcb716}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Script\07. Projectile">
+      <UniqueIdentifier>{b244e015-9151-4899-a616-d7a0b655cd00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Script\08. Object">
+      <UniqueIdentifier>{ce10580e-4add-4086-b9b4-360326826da9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Script\08. Object\Light">
+      <UniqueIdentifier>{220f7891-f53e-4e03-90dd-a82dc67c909a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Script\WaveMgr">
+      <UniqueIdentifier>{8d10c997-cdb9-4084-93a1-549794e582ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Script\09. UI">
+      <UniqueIdentifier>{09a701f4-047c-4718-ab2c-ad2a9bcec782}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h">
+      <Filter>Default</Filter>
+    </ClInclude>
+    <ClInclude Include="framework.h">
+      <Filter>Default</Filter>
+    </ClInclude>
+    <ClInclude Include="CCameraMoveScript.h">
+      <Filter>Script</Filter>
+    </ClInclude>
+    <ClInclude Include="CScriptMgr.h">
+      <Filter>ScriptMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="CGameCameraScript.h">
+      <Filter>Script</Filter>
+    </ClInclude>
+    <ClInclude Include="CState.h">
+      <Filter>Script\01. State</Filter>
+    </ClInclude>
+    <ClInclude Include="CMstIdle.h">
+      <Filter>Script\01. State\MonsterState</Filter>
+    </ClInclude>
+    <ClInclude Include="CMstChase.h">
+      <Filter>Script\01. State\MonsterState</Filter>
+    </ClInclude>
+    <ClInclude Include="CMstDead.h">
+      <Filter>Script\01. State\MonsterState</Filter>
+    </ClInclude>
+    <ClInclude Include="MstStates.h">
+      <Filter>Script\01. State\MonsterState</Filter>
+    </ClInclude>
+    <ClInclude Include="CWpAttack.h">
+      <Filter>Script\01. State\WeaponState</Filter>
+    </ClInclude>
+    <ClInclude Include="CWpIdle.h">
+      <Filter>Script\01. State\WeaponState</Filter>
+    </ClInclude>
+    <ClInclude Include="CWpReload.h">
+      <Filter>Script\01. State\WeaponState</Filter>
+    </ClInclude>
+    <ClInclude Include="WpStates.h">
+      <Filter>Script\01. State\WeaponState</Filter>
+    </ClInclude>
+    <ClInclude Include="CPlayerScript.h">
+      <Filter>Script\02. Player</Filter>
+    </ClInclude>
+    <ClInclude Include="CMonsterScript.h">
+      <Filter>Script\04. Monster</Filter>
+    </ClInclude>
+    <ClInclude Include="CStateScript.h">
+      <Filter>Script\01. State</Filter>
+    </ClInclude>
+    <ClInclude Include="CPetScript.h">
+      <Filter>Script\02. Player</Filter>
+    </ClInclude>
+    <ClInclude Include="CPetTrace.h">
+      <Filter>Script\01. State\PlayerState\PetState</Filter>
+    </ClInclude>
+    <ClInclude Include="CPetIdle.h">
+      <Filter>Script\01. State\PlayerState\PetState</Filter>
+    </ClInclude>
+    <ClInclude Include="CPlyWalk.h">
+      <Filter>Script\01. State\PlayerState</Filter>
+    </ClInclude>
+    <ClInclude Include="CPlyDodbge.h">
+      <Filter>Script\01. State\PlayerState</Filter>
+    </ClInclude>
+    <ClInclude Include="CPlyFall.h">
+      <Filter>Script\01. State\PlayerState</Filter>
+    </ClInclude>
+    <ClInclude Include="CPlyIdle.h">
+      <Filter>Script\01. State\PlayerState</Filter>
+    </ClInclude>
+    <ClInclude Include="CPlyKick.h">
+      <Filter>Script\01. State\PlayerState</Filter>
+    </ClInclude>
+    <ClInclude Include="CPlyDeath.h">
+      <Filter>Script\01. State\PlayerState</Filter>
+    </ClInclude>
+    <ClInclude Include="PlyStates.h">
+      <Filter>Script\01. State\PlayerState</Filter>
+    </ClInclude>
+    <ClInclude Include="CMstFall.h">
+      <Filter>Script\01. State\MonsterState</Filter>
+    </ClInclude>
+    <ClInclude Include="CEffectScript.h">
+      <Filter>Script\02. Player\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="CShadowScript.h">
+      <Filter>Script\02. Player\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="CWalkEffectScript.h">
+      <Filter>Script\02. Player\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="CMstBookAttack.h">
+      <Filter>Script\01. State\MonsterState\MonsterAttack</Filter>
+    </ClInclude>
+    <ClInclude Include="CMstKinAttack.h">
+      <Filter>Script\01. State\MonsterState\MonsterAttack</Filter>
+    </ClInclude>
+    <ClInclude Include="CMstBatAttack.h">
+      <Filter>Script\01. State\MonsterState\MonsterAttack</Filter>
+    </ClInclude>
+    <ClInclude Include="CMstGunScript.h">
+      <Filter>Script\04. Monster\MstGun</Filter>
+    </ClInclude>
+    <ClInclude Include="CMstGunAttack.h">
+      <Filter>Script\01. State\MonsterState\MstGun</Filter>
+    </ClInclude>
+    <ClInclude Include="CMstGunIdle.h">
+      <Filter>Script\01. State\MonsterState\MstGun</Filter>
+    </ClInclude>
+    <ClInclude Include="CWeaponScript.h">
+      <Filter>Script\03. Weapon</Filter>
+    </ClInclude>
+    <ClInclude Include="CBossMissile.h">
+      <Filter>Script\01. State\BossState</Filter>
+    </ClInclude>
+    <ClInclude Include="CBossCharge.h">
+      <Filter>Script\01. State\BossState</Filter>
+    </ClInclude>
+    <ClInclude Include="CBossCQC.h">
+      <Filter>Script\01. State\BossState</Filter>
+    </ClInclude>
+    <ClInclude Include="CBossDeath.h">
+      <Filter>Script\01. State\BossState</Filter>
+    </ClInclude>
+    <ClInclude Include="CBossIdle.h">
+      <Filter>Script\01. State\BossState</Filter>
+    </ClInclude>
+    <ClInclude Include="CBossJump.h">
+      <Filter>Script\01. State\BossState</Filter>
+    </ClInclude>
+    <ClInclude Include="CBossTrace.h">
+      <Filter>Script\01. State\BossState</Filter>
+    </ClInclude>
+    <ClInclude Include="CBossScript.h">
+      <Filter>Script\05. Boss</Filter>
+    </ClInclude>
+    <ClInclude Include="CMstMissileScript.h">
+      <Filter>Script\07. Projectile</Filter>
+    </ClInclude>
+    <ClInclude Include="CMissileScript.h">
+      <Filter>Script\07. Projectile</Filter>
+    </ClInclude>
+    <ClInclude Include="CBossMissileScript.h">
+      <Filter>Script\07. Projectile</Filter>
+    </ClInclude>
+    <ClInclude Include="CExplosionScript.h">
+      <Filter>Script\08. Object</Filter>
+    </ClInclude>
+    <ClInclude Include="CFragileScript.h">
+      <Filter>Script\08. Object</Filter>
+    </ClInclude>
+    <ClInclude Include="CBombOrkScript.h">
+      <Filter>Script\08. Object</Filter>
+    </ClInclude>
+    <ClInclude Include="CLight2DScript.h">
+      <Filter>Script</Filter>
+    </ClInclude>
+    <ClInclude Include="CTorchScript.h">
+      <Filter>Script\08. Object\Light</Filter>
+    </ClInclude>
+    <ClInclude Include="CFireLightScript.h">
+      <Filter>Script\08. Object\Light</Filter>
+    </ClInclude>
+    <ClInclude Include="CDoorScript.h">
+      <Filter>Script\06. Door</Filter>
+    </ClInclude>
+    <ClInclude Include="CWaveMgr.h">
+      <Filter>Script\WaveMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="CEnterScript.h">
+      <Filter>Script\06. Door</Filter>
+    </ClInclude>
+    <ClInclude Include="CWaveScript.h">
+      <Filter>Script\WaveMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="CSpawnScript.h">
+      <Filter>Script\WaveMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="CWeaponUIScript.h">
+      <Filter>Script\09. UI</Filter>
+    </ClInclude>
+    <ClInclude Include="CHPUIScript.h">
+      <Filter>Script\09. UI</Filter>
+    </ClInclude>
+    <ClInclude Include="CBossHPScript.h">
+      <Filter>Script\09. UI</Filter>
+    </ClInclude>
+    <ClInclude Include="CCursorUISCript.h">
+      <Filter>Script\09. UI</Filter>
+    </ClInclude>
+    <ClInclude Include="CBlankScript.h">
+      <Filter>Script\07. Projectile</Filter>
+    </ClInclude>
+    <ClInclude Include="CUIMgr.h">
+      <Filter>Script\09. UI</Filter>
+    </ClInclude>
+    <ClInclude Include="CPlayButtonUIScript.h">
+      <Filter>Script\09. UI</Filter>
+    </ClInclude>
+    <ClInclude Include="CEndingLevelScript.h">
+      <Filter>Script\09. UI</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Script.cpp">
+      <Filter>Default</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>Default</Filter>
+    </ClCompile>
+    <ClCompile Include="CCameraMoveScript.cpp">
+      <Filter>Script</Filter>
+    </ClCompile>
+    <ClCompile Include="CLight2DScript.cpp">
+      <Filter>Script</Filter>
+    </ClCompile>
+    <ClCompile Include="CScriptMgr.cpp">
+      <Filter>ScriptMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="CGameCameraScript.cpp">
+      <Filter>Script</Filter>
+    </ClCompile>
+    <ClCompile Include="CState.cpp">
+      <Filter>Script\01. State</Filter>
+    </ClCompile>
+    <ClCompile Include="CMstChase.cpp">
+      <Filter>Script\01. State\MonsterState</Filter>
+    </ClCompile>
+    <ClCompile Include="CMstDead.cpp">
+      <Filter>Script\01. State\MonsterState</Filter>
+    </ClCompile>
+    <ClCompile Include="CMstIdle.cpp">
+      <Filter>Script\01. State\MonsterState</Filter>
+    </ClCompile>
+    <ClCompile Include="CWpAttack.cpp">
+      <Filter>Script\01. State\WeaponState</Filter>
+    </ClCompile>
+    <ClCompile Include="CWpIdle.cpp">
+      <Filter>Script\01. State\WeaponState</Filter>
+    </ClCompile>
+    <ClCompile Include="CWpReload.cpp">
+      <Filter>Script\01. State\WeaponState</Filter>
+    </ClCompile>
+    <ClCompile Include="CPlayerScript.cpp">
+      <Filter>Script\02. Player</Filter>
+    </ClCompile>
+    <ClCompile Include="CMonsterScript.cpp">
+      <Filter>Script\04. Monster</Filter>
+    </ClCompile>
+    <ClCompile Include="CStateScript.cpp">
+      <Filter>Script\01. State</Filter>
+    </ClCompile>
+    <ClCompile Include="CWeaponScript.cpp">
+      <Filter>Script\03. Weapon</Filter>
+    </ClCompile>
+    <ClCompile Include="CPetScript.cpp">
+      <Filter>Script\02. Player</Filter>
+    </ClCompile>
+    <ClCompile Include="CPetTrace.cpp">
+      <Filter>Script\01. State\PlayerState\PetState</Filter>
+    </ClCompile>
+    <ClCompile Include="CPetIdle.cpp">
+      <Filter>Script\01. State\PlayerState\PetState</Filter>
+    </ClCompile>
+    <ClCompile Include="CPlyDodbge.cpp">
+      <Filter>Script\01. State\PlayerState</Filter>
+    </ClCompile>
+    <ClCompile Include="CPlyFall.cpp">
+      <Filter>Script\01. State\PlayerState</Filter>
+    </ClCompile>
+    <ClCompile Include="CPlyIdle.cpp">
+      <Filter>Script\01. State\PlayerState</Filter>
+    </ClCompile>
+    <ClCompile Include="CPlyWalk.cpp">
+      <Filter>Script\01. State\PlayerState</Filter>
+    </ClCompile>
+    <ClCompile Include="CPlyDeath.cpp">
+      <Filter>Script\01. State\PlayerState</Filter>
+    </ClCompile>
+    <ClCompile Include="CPlyKick.cpp">
+      <Filter>Script\01. State\PlayerState</Filter>
+    </ClCompile>
+    <ClCompile Include="CMstFall.cpp">
+      <Filter>Script\01. State\MonsterState</Filter>
+    </ClCompile>
+    <ClCompile Include="CEffectScript.cpp">
+      <Filter>Script\02. Player\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="CShadowScript.cpp">
+      <Filter>Script\02. Player\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="CWalkEffectScript.cpp">
+      <Filter>Script\02. Player\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="CMstGunScript.cpp">
+      <Filter>Script\04. Monster\MstGun</Filter>
+    </ClCompile>
+    <ClCompile Include="CMstBookAttack.cpp">
+      <Filter>Script\01. State\MonsterState\MonsterAttack</Filter>
+    </ClCompile>
+    <ClCompile Include="CMstKinAttack.cpp">
+      <Filter>Script\01. State\MonsterState\MonsterAttack</Filter>
+    </ClCompile>
+    <ClCompile Include="CMstBatAttack.cpp">
+      <Filter>Script\01. State\MonsterState\MonsterAttack</Filter>
+    </ClCompile>
+    <ClCompile Include="CMstGunAttack.cpp">
+      <Filter>Script\01. State\MonsterState\MstGun</Filter>
+    </ClCompile>
+    <ClCompile Include="CMstGunIdle.cpp">
+      <Filter>Script\01. State\MonsterState\MstGun</Filter>
+    </ClCompile>
+    <ClCompile Include="CBossCharge.cpp">
+      <Filter>Script\01. State\BossState</Filter>
+    </ClCompile>
+    <ClCompile Include="CBossCQC.cpp">
+      <Filter>Script\01. State\BossState</Filter>
+    </ClCompile>
+    <ClCompile Include="CBossDeath.cpp">
+      <Filter>Script\01. State\BossState</Filter>
+    </ClCompile>
+    <ClCompile Include="CBossIdle.cpp">
+      <Filter>Script\01. State\BossState</Filter>
+    </ClCompile>
+    <ClCompile Include="CBossJump.cpp">
+      <Filter>Script\01. State\BossState</Filter>
+    </ClCompile>
+    <ClCompile Include="CBossMissile.cpp">
+      <Filter>Script\01. State\BossState</Filter>
+    </ClCompile>
+    <ClCompile Include="CBossTrace.cpp">
+      <Filter>Script\01. State\BossState</Filter>
+    </ClCompile>
+    <ClCompile Include="CBossScript.cpp">
+      <Filter>Script\05. Boss</Filter>
+    </ClCompile>
+    <ClCompile Include="CMstMissileScript.cpp">
+      <Filter>Script\07. Projectile</Filter>
+    </ClCompile>
+    <ClCompile Include="CMissileScript.cpp">
+      <Filter>Script\07. Projectile</Filter>
+    </ClCompile>
+    <ClCompile Include="CBossMissileScript.cpp">
+      <Filter>Script\07. Projectile</Filter>
+    </ClCompile>
+    <ClCompile Include="CExplosionScript.cpp">
+      <Filter>Script\08. Object</Filter>
+    </ClCompile>
+    <ClCompile Include="CFragileScript.cpp">
+      <Filter>Script\08. Object</Filter>
+    </ClCompile>
+    <ClCompile Include="CBombOrkScript.cpp">
+      <Filter>Script\08. Object</Filter>
+    </ClCompile>
+    <ClCompile Include="CTorchScript.cpp">
+      <Filter>Script\08. Object\Light</Filter>
+    </ClCompile>
+    <ClCompile Include="CFireLightScript.cpp">
+      <Filter>Script\08. Object\Light</Filter>
+    </ClCompile>
+    <ClCompile Include="CDoorScript.cpp">
+      <Filter>Script\06. Door</Filter>
+    </ClCompile>
+    <ClCompile Include="CWaveMgr.cpp">
+      <Filter>Script\WaveMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="CEnterScript.cpp">
+      <Filter>Script\06. Door</Filter>
+    </ClCompile>
+    <ClCompile Include="CWaveScript.cpp">
+      <Filter>Script\WaveMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="CSpawnScript.cpp">
+      <Filter>Script\WaveMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="CWeaponUIScript.cpp">
+      <Filter>Script\09. UI</Filter>
+    </ClCompile>
+    <ClCompile Include="CHPUIScript.cpp">
+      <Filter>Script\09. UI</Filter>
+    </ClCompile>
+    <ClCompile Include="CBossHPScript.cpp">
+      <Filter>Script\09. UI</Filter>
+    </ClCompile>
+    <ClCompile Include="CCursorUISCript.cpp">
+      <Filter>Script\09. UI</Filter>
+    </ClCompile>
+    <ClCompile Include="CBlankScript.cpp">
+      <Filter>Script\07. Projectile</Filter>
+    </ClCompile>
+    <ClCompile Include="CUIMgr.cpp">
+      <Filter>Script\09. UI</Filter>
+    </ClCompile>
+    <ClCompile Include="CPlayButtonUIScript.cpp">
+      <Filter>Script\09. UI</Filter>
+    </ClCompile>
+    <ClCompile Include="CEndingLevelScript.cpp">
+      <Filter>Script\09. UI</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cpp.hint" />
+  </ItemGroup>
+</Project>
